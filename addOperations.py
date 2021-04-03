@@ -24,6 +24,12 @@ class AddOperation:
             i += 1
         print('\n*** the sum is: %i\n' % sum)
 
+    def recursive_method(self, list):
+        sum = 0
+        i = len(self.list) - 1
+        sum += recursive_method(i-1)
+        print(sum)
+
 
 
 
@@ -40,4 +46,5 @@ print('Operational List: %s' % a.prt())
 
 #a.for_method(list)
 
-a.while_method(list)
+#a.while_method(list)
+a.recursive_method(list)
